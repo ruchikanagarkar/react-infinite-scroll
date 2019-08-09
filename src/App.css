@@ -1,0 +1,51 @@
+.App {
+  text-align: center;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+}
+
+::-webkit-scrollbar-thumb {
+  background: grey;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000;
+}
+
+.infinite-scroll-component {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    border: 1px solid #000;
+    width:  300px;
+}
+
+.infinite-scroll-component .row {
+  max-width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-left: 0;
+  margin: 0;
+  text-transform: capitalize;
+}
+
+.row li {
+    position: relative;
+    display: block;
+    padding: .75rem 1.25rem;
+    margin-bottom: -1px;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.125);
+}
