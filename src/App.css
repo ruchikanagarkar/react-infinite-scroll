@@ -15,16 +15,22 @@
   background: #b30000;
 }
 
-.infinite-scroll-component {
-    top: 50%;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    border: 1px solid #000;
-    width:  300px;
+.text-bold {
+  font-weight: bold;
 }
 
-.infinite-scroll-component .row {
+.box {
+  height: 400px;
+  overflow-y: scroll;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  border: 1px solid #000;
+  width:  300px;
+}
+
+.box .row {
   max-width: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -38,11 +44,27 @@
   text-transform: capitalize;
 }
 
-.row li {
+.box li {
     position: relative;
     display: block;
     padding: 5px;
     margin-bottom: -1px;
     background-color: #fff;
     border: 1px solid rgba(0,0,0,.125);
+}
+
+.box li span {
+  display: block;
+}
+
+.error-message {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+  padding: .75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  width: 80%;
+  margin: 10px auto;
 }
